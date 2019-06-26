@@ -23,7 +23,7 @@
 
 The ontology was created jointly by the BioSys group at the research unit of Applied mathematics and computer science  
 from genomes to the environment (MaIAGE) of the Institut National de la Recherche Agronomique (INRA) France, by the group the Large-scale Heterogeneous DAta and Knowledge (LaHDAK team) of the Laboratoire de recherche en informatique (LRI) of the Université Paris-Sud/CNRS, France  and by the Département MMIP AgroParisTech of the INRA, France.
-INRA, Aggroparistech and  Université Paris-Sud own the copyright of the ontology BiPOm. 
+INRA, Agroparistech and  Université Paris-Sud own the copyright of the ontology BiPOm. 
 
 2. License terms
 
@@ -654,6 +654,7 @@ Anne.Goelzer@inra.fr</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#encoded_by">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#encodes_for"/>
+        <rdfs:label>encoded_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -734,12 +735,6 @@ Anne.Goelzer@inra.fr</rdfs:comment>
         <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43431"/>
         <rdfs:label>requires</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/BiPON#precedes -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/BiPON#precedes"/>
     
 
 
@@ -5962,7 +5957,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#AT3G54050 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#AT3G54050">
-        <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatase1"/>
+        <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatase1"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/P25851</BiPOm:UniProt_URL>
         <rdfs:label xml:lang="en">AT3G54050</rdfs:label>
     </owl:NamedIndividual>
@@ -5972,7 +5967,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#AT3G55800 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#AT3G55800">
-        <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphatase"/>
+        <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphatase"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/P46283</BiPOm:UniProt_URL>
         <rdfs:label xml:lang="en">AT3G55800</rdfs:label>
     </owl:NamedIndividual>
@@ -6137,7 +6132,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ArthCp030">
         <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseLargeChain"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/O03042</BiPOm:UniProt_URL>
-        <rdfs:label xml:lang="en">ArthCp030</rdfs:label>
+        <rdfs:label>ATCG00490</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ArthCp030</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6147,7 +6143,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#At5g22620">
         <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol-1-phosphatase"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/Q9FNJ9</BiPOm:UniProt_URL>
-        <rdfs:label xml:lang="en">At5g22620</rdfs:label>
+        <rdfs:label xml:lang="en">AT5G22620</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6245,8 +6241,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-1">
-        <oboInOwl:hasExactSynonym>CP12-1</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Calvin cycle protein CP12-1</rdfs:label>
+        <rdfs:seeAlso>CP12-1</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6254,8 +6250,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-2">
-        <oboInOwl:hasExactSynonym>CP12-2</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Calvin cycle protein CP12-2</rdfs:label>
+        <rdfs:seeAlso>CP12-2</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6263,8 +6259,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#CalvinCycleProteinCP12-3">
-        <oboInOwl:hasExactSynonym>CP12-3</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Calvin cycle protein CP12-3</rdfs:label>
+        <rdfs:seeAlso>CP12-3</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6456,6 +6452,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseVariableChain2">
         <rdfs:label xml:lang="en">Chloroplastic Ferredoxin-thioredoxin reductase variable chain 2</rdfs:label>
+        <rdfs:seeAlso>FTRA2</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6464,6 +6461,76 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseholoenzyme-Red">
         <rdfs:label xml:lang="en">Chloroplastic Ferredoxin-thioredoxin reductase holoenzyme-Red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatase1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatase1">
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseHomotetramere -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseHomotetramere">
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseMagnesiumComplexation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseMagnesiumComplexation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#co-enzyme_recruitment"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseHomotetramere"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Mg"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase1 Magnesium complexation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseTetramerisation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseTetramerisation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#homomultimerisation"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatase1"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseHomotetramere"/>
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase tetramerisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-MgComplexReduction -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-MgComplexReduction">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#transfer_of_a_disulfide_bond"/>
+        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1-Red"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1-Red"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein-disulfideReductaseActivity"/>
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex reduction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Ox -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Ox">
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex-Ox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Red -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Red">
+        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex-Red</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6554,6 +6621,35 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticRibuloseBisphosphatecarboxylase-oxygenaseActivase">
         <rdfs:label xml:lang="en">Chloroplastic Ribulose bisphosphate carboxylase-oxygenase activase</rdfs:label>
+        <rdfs:seeAlso>RCA</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphatase -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphatase">
+        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimere -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimere">
+        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase homodimere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimereMagnesiumComplexation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimereMagnesiumComplexation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#co-enzyme_recruitment"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimere"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Mg"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Ox"/>
+        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase homodimere Magnesium complexation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6723,6 +6819,17 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_17994</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">D-ribose 1,5-bisphosphate</rdfs:label>
+        <rdfs:label xml:lang="en">D-ribose 1,5-bisphosphate </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#D-ribulose5-phosphate -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribulose5-phosphate">
@@ -6730,6 +6837,17 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_17363</BiPOm:has_OBO_IRI>
         <rdfs:label xml:lang="en">D-ribulose 5-phosphate</rdfs:label>
         <rdfs:label xml:lang="en">D-ribulose 5-phosphate </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1-7-bisphosphate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1-7-bisphosphate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_17969</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">D-sedoheptulose-1,7-bisphosphate</rdfs:label>
+        <rdfs:label xml:lang="en">D-sedoheptulose-1,7-bisphosphate </rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6823,7 +6941,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#FTRA2">
         <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseVariableChain2"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/A0A1P8BDN6</BiPOm:UniProt_URL>
-        <rdfs:label xml:lang="en">FTRA2</rdfs:label>
+        <rdfs:label xml:lang="en">AT5G08410</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7094,12 +7212,32 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#NAD -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#NAD">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_15846</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">NAD(+) </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#NADH -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADH">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
         <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_16908</BiPOm:has_OBO_IRI>
         <rdfs:label xml:lang="en">NADH </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#NADP -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADP">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_18009</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">NADP(+) </rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7252,7 +7390,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ADP"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCOLargeSubunitDimere"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
         <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#proteinBindingInvolvedInProteinFolding"/>
         <rdfs:label xml:lang="en">RBCL dimerisation</rdfs:label>
     </owl:NamedIndividual>
@@ -7284,7 +7422,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RCA">
         <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticRibuloseBisphosphatecarboxylase-oxygenaseActivase"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/P10896</BiPOm:UniProt_URL>
-        <rdfs:label xml:lang="en">RCA</rdfs:label>
+        <rdfs:label xml:lang="en">AT2G39730</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7352,8 +7490,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseLargeChain -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseLargeChain">
-        <oboInOwl:hasExactSynonym>RBCL</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Ribulose bisphosphate carboxylase large chain</rdfs:label>
+        <rdfs:seeAlso>RBCL</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -7361,8 +7499,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain1A -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain1A">
-        <oboInOwl:hasExactSynonym>RBCS-1A</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Ribulose bisphosphate carboxylase small chain 1A</rdfs:label>
+        <rdfs:seeAlso>RBCS-1A</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -7370,8 +7508,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain1B -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain1B">
-        <oboInOwl:hasExactSynonym>RBCS-1B</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Ribulose bisphosphate carboxylase small chain 1B</rdfs:label>
+        <rdfs:seeAlso>RBCS-1B</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -7379,8 +7517,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain2B -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain2B">
-        <oboInOwl:hasExactSynonym>RBCS-2B</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Ribulose bisphosphate carboxylase small chain 2B</rdfs:label>
+        <rdfs:seeAlso>RBCS-2B</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -7388,8 +7526,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain3B -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RibuloseBisphosphateCarboxylaseSmallChain3B">
-        <oboInOwl:hasExactSynonym>RBCS-3B</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Ribulose bisphosphate carboxylase small chain 3B</rdfs:label>
+        <rdfs:seeAlso>RBCS-3B</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -7400,8 +7538,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_lyase_process"/>
         <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCOHoloenzyme"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#CO2"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#proton"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glycericAcid"/>
         <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribulose-bisphosphateCarboxylaseActivity"/>
@@ -7520,9 +7658,9 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ADP"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCOHoloenzyme"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol1-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribulose-1,5-bisphosphatecarboxylase/oxygenaseActivatorActivity"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribulose-1-5-bisphosphatecarboxylase/ribulose-1-5-bisphosphatecarboxylase-oxygenaseActivatorActivity"/>
         <rdfs:label xml:lang="en">RuBisCO holoenzyme discharge</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7587,8 +7725,19 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <!-- http://purl.obolibrary.org/obo/BiPOm#RubiscoAccumulationFactor1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#RubiscoAccumulationFactor1">
-        <oboInOwl:hasExactSynonym>RAF1</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Rubisco accumulation factor 1</rdfs:label>
+        <rdfs:seeAlso>RAF1</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1-7-bisphosphataseDimerisation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1-7-bisphosphataseDimerisation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#homomultimerisation"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphatase"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimere"/>
+        <rdfs:label xml:lang="en">Sedoheptulose-1,7-bisphosphatase dimerisation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7653,7 +7802,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseInhibitionByPi">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_cofactor_recruitment"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Pi"/>
         <rdfs:label xml:lang="en">Sedoheptulose inhibition by Pi</rdfs:label>
     </owl:NamedIndividual>
@@ -7738,10 +7887,10 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCO-uncarbamylated-RuBP"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ADP"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCO-uncarbamylated"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribulose-1,5-bisphosphatecarboxylase/oxygenaseActivatorActivity"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribulose-1-5-bisphosphatecarboxylase/ribulose-1-5-bisphosphatecarboxylase-oxygenaseActivatorActivity"/>
         <rdfs:label xml:lang="en">Uncarbamylated RuBisCO discharge</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7751,8 +7900,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#UncarbamylatedRuBisCOSequestration">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_cofactor_recruitment"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCO-uncarbamylated"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCO-uncarbamylated-RuBP"/>
         <rdfs:label xml:lang="en">Uncarbamylated RuBisCO sequestration</rdfs:label>
     </owl:NamedIndividual>
@@ -7785,7 +7934,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#at2g01140">
         <BiPOm:encodes_for rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolase3"/>
         <BiPOm:UniProt_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.uniprot.org/uniprot/Q9ZU52</BiPOm:UniProt_URL>
-        <rdfs:label xml:lang="en">at2g01140</rdfs:label>
+        <rdfs:label xml:lang="en">AT2G01140</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7881,16 +8030,54 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphate1-phosphataseActivity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphate1-phosphataseActivity">
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0042132</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate 1-phosphatase activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateAldolisation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateAldolisation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_lyase_process"/>
+        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolaseHomotetramere"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphate"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceronePhosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose-bisphosphateAldolaseActivity"/>
+        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate aldolisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateDephosphorylation1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateDephosphorylation1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_hydrolysis"/>
+        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphate1-phosphataseActivity"/>
+        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate dephosphorylation 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#fructose16bisphosphateDephosphorylation2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose16bisphosphateDephosphorylation2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_hydrolysis"/>
         <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-16-bisphosphatase2-Mgcomplex"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphate1-phosphataseActivity"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphate1-phosphataseActivity"/>
         <rdfs:label>fructose 1,6-bisphosphate dephosphorylation 2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7911,6 +8098,15 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#glutathioneTransferaseActivity">
         <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0004364</BiPOm:has_OBO_IRI>
         <rdfs:label xml:lang="en">glutathione transferase activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenaseActivity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenaseActivity">
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0047100</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">glyceraldehyde-3-phosphate dehydrogenase (NADP+) (phosphorylating) activity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7969,6 +8165,17 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_16905</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">keto-D-fructose 1,6-bisphosphate</rdfs:label>
+        <rdfs:label xml:lang="en">keto-D-fructose 1,6-bisphosphate </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate">
@@ -8002,12 +8209,22 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#oxidativeFragmentationOfThePentoseSubstrate">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_oxido-reduction"/>
         <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#RuBisCOHoloenzyme"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#O2"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-phosphoglycolate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glycericAcid"/>
         <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#monooxygenaseActivity"/>
         <rdfs:label xml:lang="en">oxidative fragmentation of the pentose substrate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#phosphate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
+        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_18367</BiPOm:has_OBO_IRI>
+        <rdfs:label xml:lang="en">phosphate(3-)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8125,16 +8342,16 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Ribose5-phosphate-Xylulose5-phosphateproduction-Co"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Ribose5-phosphate-Xylulose5-phosphateproduction-Mg"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Ribose5-phosphate-Xylulose5-phosphateproduction-Mn"/>
+        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateAldolisation"/>
+        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateDephosphorylation1"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphateConversion"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphorylationOf3-PGA"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribose-5-phosphate-ribulose-5-phosphateconversion3"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ribose-5-phosphate-ribulose-5-phosphateconversion4"/>
+        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateAldolisation"/>
+        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateDephosphorylation"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphateReduction1"/>
         <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphateReduction2"/>
-        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateAldolisation"/>
-        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateDephosphorylation1"/>
-        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateAldolisation"/>
-        <BiPOm:has_intermediary_process rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateDephosphorylation"/>
         <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0019253</BiPOm:has_OBO_IRI>
         <oboInOwl:hasExactSynonym>Calvin Cycle</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">reductive pentose-phosphate cycle</rdfs:label>
@@ -8197,8 +8414,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#riboseBisphosphateFeedbackOnSedoheptuloseBisphosphatase">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_cofactor_recruitment"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-RuBP"/>
         <rdfs:label xml:lang="en">ribose bisphosphate feedback on Sedoheptulose bisphosphatase</rdfs:label>
     </owl:NamedIndividual>
@@ -8277,9 +8494,38 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ATP"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribulose5-phosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ADP"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
         <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphoribulokinaseActivity"/>
         <rdfs:label xml:lang="en">ribulose 5-phosphate phosphorylation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateAldolisation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateAldolisation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_lyase_process"/>
+        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolaseHomotetramere"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-erythrose4-phosphate"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceronePhosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1-7-bisphosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphateAldolaseActivity"/>
+        <rdfs:label xml:lang="en">sedoheptulose-1,7-bisphosphate aldolisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateDephosphorylation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateDephosphorylation">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_hydrolysis"/>
+        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Red"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1-7-bisphosphate"/>
+        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose7-phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphataseActivity"/>
+        <rdfs:label xml:lang="en">sedoheptulose-1,7-bisphosphate dephosphorylation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8407,8 +8653,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol-1-phosphatase"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol1-phosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
         <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#2-carboxy-D-arabinitol-1-phosphataseActivity"/>
         <rdfs:label xml:lang="en">2-carboxy-D-arabinitol 1-phosphate degradation</rdfs:label>
     </owl:NamedIndividual>
@@ -8453,10 +8699,10 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADPH"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#proton"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADP"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADP(+)"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenase(NADP+)(phosphorylating)Activity"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenaseActivity"/>
         <rdfs:label xml:lang="en">3-phospho-D-glyceroyl dihydrogen phosphate reduction 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8470,268 +8716,20 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADPH"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#proton"/>
         <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphate"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADP"/>
         <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#NADP(+)"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenase(NADP+)(phosphorylating)Activity"/>
+        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
+        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenaseActivity"/>
         <rdfs:label xml:lang="en">3-phospho-D-glyceroyl dihydrogen phosphate reduction 2</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatase1 -->
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ribulose-1-5-bisphosphatecarboxylase/ribulose-1-5-bisphosphatecarboxylase-oxygenaseActivatorActivity -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatase1">
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase 1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseHomotetramere -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseHomotetramere">
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseMagnesiumComplexation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseMagnesiumComplexation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#co-enzyme_recruitment"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Mg"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseHomotetramere"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase1 Magnesium complexation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseTetramerisation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseTetramerisation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#homomultimerisation"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatase1"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseHomotetramere"/>
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase tetramerisation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-MgComplexReduction -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-MgComplexReduction">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#transfer_of_a_disulfide_bond"/>
-        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein-disulfideReductaseActivity"/>
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex reduction</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Ox -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Ox">
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex-Ox</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Red -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Red">
-        <rdfs:label xml:lang="en">Chloroplastic Fructose-1,6-bisphosphatase homotetramere-Mg complex-Red</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphatase -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphatase">
-        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimere -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimere">
-        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase homodimere</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimereMagnesiumComplexation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimereMagnesiumComplexation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#co-enzyme_recruitment"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Mg"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimere"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Ox"/>
-        <rdfs:label xml:lang="en">Chloroplastic Sedoheptulose-1,7-bisphosphatase homodimere Magnesium complexation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_17994</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">D-ribose 1,5-bisphosphate</rdfs:label>
-        <rdfs:label xml:lang="en">D-ribose 1,5-bisphosphate </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1,7-bisphosphate -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1,7-bisphosphate">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_17969</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">D-sedoheptulose-1,7-bisphosphate</rdfs:label>
-        <rdfs:label xml:lang="en">D-sedoheptulose-1,7-bisphosphate </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#NAD(+) -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#NAD(+)">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_15846</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">NAD(+) </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#NADP(+) -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADP(+)">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_18009</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">NADP(+) </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1,7-bisphosphataseDimerisation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1,7-bisphosphataseDimerisation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#homomultimerisation"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphatase"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimere"/>
-        <rdfs:label xml:lang="en">Sedoheptulose-1,7-bisphosphatase dimerisation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphate1-phosphataseActivity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphate1-phosphataseActivity">
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0042132</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate 1-phosphatase activity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateAldolisation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateAldolisation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_lyase_process"/>
-        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolaseHomotetramere"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphate"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceronePhosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose-bisphosphateAldolaseActivity"/>
-        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate aldolisation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateDephosphorylation1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateDephosphorylation1">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_hydrolysis"/>
-        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphate1-phosphataseActivity"/>
-        <rdfs:label xml:lang="en">fructose 1,6-bisphosphate dephosphorylation 1</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenase(NADP+)(phosphorylating)Activity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenase(NADP+)(phosphorylating)Activity">
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0047100</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">glyceraldehyde-3-phosphate dehydrogenase (NADP+) (phosphorylating) activity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_16905</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">keto-D-fructose 1,6-bisphosphate</rdfs:label>
-        <rdfs:label xml:lang="en">keto-D-fructose 1,6-bisphosphate </rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#phosphate(3-) -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
-        <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CHEBI_18367</BiPOm:has_OBO_IRI>
-        <rdfs:label xml:lang="en">phosphate(3-)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#ribulose-1,5-bisphosphatecarboxylase/oxygenaseActivatorActivity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-1,5-bisphosphatecarboxylase/oxygenaseActivatorActivity">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-1-5-bisphosphatecarboxylase/ribulose-1-5-bisphosphatecarboxylase-oxygenaseActivatorActivity">
         <BiPOm:has_OBO_IRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0046863</BiPOm:has_OBO_IRI>
         <rdfs:label xml:lang="en">ribulose-1,5-bisphosphate carboxylase/oxygenase activator activity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateAldolisation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateAldolisation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_lyase_process"/>
-        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolaseHomotetramere"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-erythrose4-phosphate"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#glyceronePhosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1,7-bisphosphate"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphateAldolaseActivity"/>
-        <rdfs:label xml:lang="en">sedoheptulose-1,7-bisphosphate aldolisation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateDephosphorylation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateDephosphorylation">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_hydrolysis"/>
-        <GOREL_0001007 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Red"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#water"/>
-        <RO_0002233 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1,7-bisphosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose7-phosphate"/>
-        <RO_0002234 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-        <BiPOm:requires rdf:resource="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphataseActivity"/>
-        <rdfs:label xml:lang="en">sedoheptulose-1,7-bisphosphate dephosphorylation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8834,6 +8832,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseHoloenzyme"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseVariableChain2"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFerredoxin-thioredoxinReductaseholoenzyme-Red"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatase1"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseHomotetramere"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseMagnesiumComplexation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphataseTetramerisation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-MgComplexReduction"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1-6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-16-bisphosphatase2"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-16-bisphosphatase2-Mgcomplex"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-bisphosphateAldolase3"/>
@@ -8844,6 +8849,9 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticPhosphoribulokinase"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticPhosphoribulokinase-Red"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticRibuloseBisphosphatecarboxylase-oxygenaseActivase"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphatase"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimere"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1-7-bisphosphataseHomodimereMagnesiumComplexation"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticThioredoxinF1-Red"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticTransketolase-1"/>
@@ -8861,7 +8869,9 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Chloroplastic_Fructose-16-bisphosphatase2_Magnesium_complexation"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Co"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-erythrose4-phosphate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribose1-5-bisphosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribulose5-phosphate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1-7-bisphosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-xylulose5-phosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-xylulose5-phosphate-D-erythrose4-phosphateproduction-Ca"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-xylulose5-phosphate-D-erythrose4-phosphateproduction-Co"/>
@@ -8893,7 +8903,9 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Homodimer"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Mg"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Mn"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NAD"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADH"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADP"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADPH"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#O2"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#OneOfGlutathioneS-transferase"/>
@@ -8938,6 +8950,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#RuBisCOactivase-Red"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#RuBisCOholoenzyme-CA1P"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#RubiscoAccumulationFactor1"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1-7-bisphosphataseDimerisation"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphataseHomodimereReduction"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Ox"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#SedoheptuloseBisphosphatasehomodimere-Mgcomplex-Red"/>
@@ -8965,18 +8978,24 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#cpn60ComplexAssembly"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ferredoxin_thioredoxinReductaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose-bisphosphateAldolaseActivity"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphate1-phosphataseActivity"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateAldolisation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1-6-bisphosphateDephosphorylation1"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose16bisphosphateDephosphorylation2"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glutathione"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glutathioneTransferaseActivity"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde3-phosphateConversion"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceronePhosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#iron-sulfurClusterAssembly"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ironSulfides"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1-6-bisphosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose6-phosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#kinaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#monooxygenaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#oxidativeFragmentationOfThePentoseSubstrate"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphoglycerateKinase1"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphoglycerateKinaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphoglycerateKinaseInhibition"/>
@@ -9002,6 +9021,8 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-phosphate-3-epimerasehomodimere-ZnComplex"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-phosphate3-epimeraseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose5-phosphatePhosphorylation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateAldolisation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1-7-bisphosphateDephosphorylation"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphataseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-bisphosphateAldolaseActivity"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose7-phosphate"/>
@@ -9020,30 +9041,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphate"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphateReduction1"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#3-phospho-D-glyceroylDihydrogenPhosphateReduction2"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatase1"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseHomotetramere"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseMagnesiumComplexation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphataseTetramerisation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-MgComplexReduction"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Ox"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticFructose-1,6-bisphosphatasehomotetramere-Mgcomplex-Red"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphatase"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimere"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ChloroplasticSedoheptulose-1,7-bisphosphataseHomodimereMagnesiumComplexation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-ribose1,5-bisphosphate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#D-sedoheptulose-1,7-bisphosphate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NAD(+)"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#NADP(+)"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#Sedoheptulose-1,7-bisphosphataseDimerisation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphate1-phosphataseActivity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateAldolisation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#fructose1,6-bisphosphateDephosphorylation1"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#glyceraldehyde-3-phosphateDehydrogenase(NADP+)(phosphorylating)Activity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#keto-D-fructose1,6-bisphosphate"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-1,5-bisphosphatecarboxylase/oxygenaseActivatorActivity"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateAldolisation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#sedoheptulose-1,7-bisphosphateDephosphorylation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BiPOm#ribulose-1-5-bisphosphatecarboxylase/ribulose-1-5-bisphosphatecarboxylase-oxygenaseActivatorActivity"/>
         </owl:distinctMembers>
     </rdf:Description>
     
@@ -9108,31 +9106,16 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <rdf:Description rdf:about="urn:swrl#mp">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#Pagg">
+    <rdf:Description rdf:about="urn:swrl#pag">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#P">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#p1">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#molAgg">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#p2">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#px">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#molin">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#molout">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#pag">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#P">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#mol">
@@ -9366,296 +9349,6 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
                         <swrl:argument1 rdf:resource="urn:swrl#m_out"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#molAgg"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#molAgg"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/BiPON#precedes"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#px"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                                                <swrl:argument2 rdf:resource="urn:swrl#px"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                                                        <swrl:argument2 rdf:resource="urn:swrl#molin"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                                                                <swrl:argument1 rdf:resource="urn:swrl#molAgg"/>
-                                                                                                <swrl:argument2 rdf:resource="urn:swrl#molin"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
-                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#molin"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#molAgg"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/BiPON#precedes"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#px"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#px"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                                                <swrl:argument2 rdf:resource="urn:swrl#molAgg"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                                                        <swrl:argument2 rdf:resource="urn:swrl#molout"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                                                                <swrl:argument1 rdf:resource="urn:swrl#molAgg"/>
-                                                                                                <swrl:argument2 rdf:resource="urn:swrl#molout"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
-                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pagg"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#molout"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -10179,7 +9872,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl#m_out"/>
-                                                        <swrl:argument2 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
+                                                        <swrl:argument2 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -11132,7 +10825,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#m_out"/>
-                                                <swrl:argument2 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate(3-)"/>
+                                                <swrl:argument2 rdf:resource="http://purl.obolibrary.org/obo/BiPOm#phosphate"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
