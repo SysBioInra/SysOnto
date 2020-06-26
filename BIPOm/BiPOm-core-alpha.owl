@@ -18,7 +18,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/BiPOm">
-        <rdfs:comment xml:lang="inra.fr">BiPOm
+        <rdfs:comment>BiPOm
 
 1. Copyright of ontology
 
@@ -305,6 +305,12 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/page -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
@@ -319,321 +325,6 @@ Anne.Goelzer</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000051</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000062</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is preceded by</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takes place after</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">preceded by</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
-        <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000063</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">precedes</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GOREL_0001007 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GOREL_0001007">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediates"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_mediated_process"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#active_entity"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOREL:0001007</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000056</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">participates in</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
-        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000057</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">has participant</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002018 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002018">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
-        <obo:IAO_0000115>w &apos;has process component&apos; p if p and w are processes,  w &apos;has part&apos; p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-24T09:49:21Z</oboInOwl:creation_date>
-        <rdfs:label>has component process</rdfs:label>
-        <rdfs:label>has_subprocess</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between occurrents, shares a start boundary with.</obo:IAO_0000115>
-        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002223</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">starts</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002224 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002224">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-        <obo:IAO_0000115>x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) &lt; ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002224</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">starts with</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between occurrents, shares an end boundary with.</obo:IAO_0000115>
-        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002229</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finishes</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">ends</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002230 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002230">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-        <obo:IAO_0000115>x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) &gt; α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002230</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">ends with</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002352"/>
-        <obo:IAO_0000115>p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002233</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">has input</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-        <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002234</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">has output</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <obo:IAO_0000115>inverse of has input</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002352</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">input of</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002353</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">output of</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002434 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002434">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
-        <obo:IAO_0000115>A relationship that holds between two entities in which the processes executed by the two entities are causally connected.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Considering relabeling as &apos;pairwise interacts with&apos;</obo:IAO_0000116>
-        <obo:IAO_0000116>This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact.</obo:IAO_0000116>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000232>Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.</obo:IAO_0000232>
-        <oboInOwl:hasExactSynonym>in pairwise interaction with</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:label>interacts_with</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0914</rdfs:seeAlso>
-        <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/InteractionRelations</foaf:page>
-    </owl:ObjectProperty>
     
 
 
@@ -671,6 +362,46 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ends -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#ends">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#part_of"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ends_with"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between occurrents, shares an end boundary with.</obo:IAO_0000115>
+        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002229</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finishes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">ends</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002229</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#ends_with -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#ends_with">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+        <obo:IAO_0000115>x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) &gt; α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002230</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">ends with</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ends_with</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002230</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#has_function -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_function">
@@ -681,10 +412,32 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#has_input -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_input">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#input_of"/>
+        <obo:IAO_0000115>p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002233</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_input</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002233</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#has_intermediary_process -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_intermediary_process">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
         <rdfs:label>has_intermediary_process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -702,6 +455,84 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#has_output -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_output">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#output_of"/>
+        <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002234</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_output</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002234</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_part">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/BFO_0000051</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_participant">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000057</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_participant</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0000057</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#has_subprocess -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#has_subprocess">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_part"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#part_of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
+        <obo:IAO_0000115>w &apos;has process component&apos; p if p and w are processes,  w &apos;has part&apos; p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-24T09:49:21Z</oboInOwl:creation_date>
+        <rdfs:label>has component process</rdfs:label>
+        <rdfs:label>has_subprocess</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002018</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#in_complex_with -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#in_complex_with">
@@ -712,13 +543,77 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#input_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#input_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <obo:IAO_0000115>inverse of has input</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002352</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">input of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input_of</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002352</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#interacts_with -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#interacts_with">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
+        <obo:IAO_0000115>A relationship that holds between two entities in which the processes executed by the two entities are causally connected.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Considering relabeling as &apos;pairwise interacts with&apos;</obo:IAO_0000116>
+        <obo:IAO_0000116>This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact.</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000232>Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.</obo:IAO_0000232>
+        <oboInOwl:hasExactSynonym>in pairwise interaction with</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label>interacts_with</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MI_0914</rdfs:seeAlso>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002434</skos:exactMatch>
+        <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/InteractionRelations</foaf:page>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#mediated_by -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#mediated_by">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediates"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_mediated_process"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#active_entity"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOREL:0001007</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediated_by</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/GOREL_0001007</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#mediates -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#mediates">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
         <rdfs:subPropertyOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
             </rdf:Description>
         </rdfs:subPropertyOf>
         <rdfs:label>mediates</rdfs:label>
@@ -734,12 +629,140 @@ Anne.Goelzer</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BiPOm#output_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#output_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participates_in"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002353</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002353</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/BFO_0000050</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#participates_in">
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000056</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates_in</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0000056</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#preceded_by -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#preceded_by">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#precedes"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000062</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is preceded by</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takes place after</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">preceded by</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/BFO_0000062</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#precedes">
+        <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000063</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precedes</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/BFO_0000063</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BiPOm#requires -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#requires">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Activity"/>
         <rdfs:label>requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#starts -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#starts">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#part_of"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#starts_with"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between occurrents, shares a start boundary with.</obo:IAO_0000115>
+        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002223</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">starts</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002223</skos:exactMatch>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BiPOm#starts_with -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BiPOm#starts_with">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+        <obo:IAO_0000115>x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) &lt; ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002224</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">starts with</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starts_with</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/RO_0002224</skos:exactMatch>
     </owl:ObjectProperty>
     
 
@@ -767,7 +790,7 @@ Anne.Goelzer</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -780,7 +803,7 @@ Anne.Goelzer</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -966,7 +989,7 @@ Anne.Goelzer</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_modification_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#active_gene_product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1015,7 +1038,7 @@ Anne.Goelzer</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Chemical"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1078,7 +1101,7 @@ Anne.Goelzer</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Biochemical_Process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1291,7 +1314,7 @@ Anne.Goelzer</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolic_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1529,7 +1552,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#post-translational_protein_modification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#conjugated_protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1623,7 +1646,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#active_entity"/>
             </owl:Restriction>
@@ -1641,7 +1664,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_mediated_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#active_entity"/>
             </owl:Restriction>
@@ -1657,20 +1680,20 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BiPOm#biological_process">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
             </owl:Restriction>
@@ -1862,7 +1885,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#compagnon-chaperone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1892,13 +1915,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#chaperone-mediated_protein_complex_assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
             </owl:Restriction>
@@ -1915,7 +1938,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_mediated_reaction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Chaperone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1985,7 +2008,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_cofactor_recruitment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1998,7 +2021,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Holoenzyme"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2221,13 +2244,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#substrate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2300,19 +2323,19 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex_assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Protein_Complex_Subunit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#participant"/>
             </owl:Restriction>
@@ -2645,7 +2668,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#enzymatic_post-translational_protein_modification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -2658,7 +2681,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -2736,13 +2759,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Biochemical_Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolite"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#metabolite"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3366,7 +3389,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_modification_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3738,7 +3761,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://scai.fraunhofer.de/PWDICT#protein_modification_pathway"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ends_with"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Activation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4319,7 +4342,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_addition_of_a_chemical_group"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -4332,7 +4355,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -4418,7 +4441,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000177"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
@@ -4481,7 +4504,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4979,7 +5002,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000913"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -5089,7 +5112,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Biochemical_Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5153,7 +5176,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000913"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -5212,13 +5235,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_dissociation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#multimer_of_simple_chemicals"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5235,13 +5258,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_non-covalent_binding"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-gene_product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#multimer_of_simple_chemicals"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5295,7 +5318,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_covalent_reaction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -5308,14 +5331,14 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#conjugated_protein"/>
             </owl:Restriction>
@@ -5332,7 +5355,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_protein_complex_assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -5366,13 +5389,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
@@ -5401,13 +5424,13 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000177"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
@@ -5424,7 +5447,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_protein_complex_assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5440,7 +5463,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_protein_complex_disassembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5457,7 +5480,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_non-covalent_binding"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5480,7 +5503,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_dissociation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5578,7 +5601,7 @@ source: PW:PW_0000002</rdfs:isDefinedBy>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
             </owl:Restriction>
@@ -5605,7 +5628,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000344"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5636,7 +5659,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0000344"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5659,7 +5682,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Hydrolase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5686,7 +5709,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_participant"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#non-covalent_complex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5704,7 +5727,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Ligasev"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5729,7 +5752,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Transferase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5754,7 +5777,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Oxidoreductase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5779,7 +5802,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Isomerase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5804,7 +5827,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#0002721"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Lyase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5830,7 +5853,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#biological_mediated_reaction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#Enzyme"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5862,7 +5885,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_modification_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein_modification_process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5995,10 +6018,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
     <rdf:Description rdf:about="urn:swrl#a">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#o2">
+    <rdf:Description rdf:about="urn:swrl#o1">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#o1">
+    <rdf:Description rdf:about="urn:swrl#o2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#d">
@@ -6040,16 +6063,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
     <rdf:Description rdf:about="urn:swrl#mp">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#pag">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#P">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#p1">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#p2">
+    <rdf:Description rdf:about="urn:swrl#pel">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#mol">
@@ -6058,10 +6072,19 @@ A series of biochemical reactions which occurs in a known sequence and can resul
     <rdf:Description rdf:about="urn:swrl#Pag">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#pel">
+    <rdf:Description rdf:about="urn:swrl#subu">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#subu">
+    <rdf:Description rdf:about="urn:swrl#p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#p2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#P">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#pag">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#pc">
@@ -6140,9 +6163,8 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#o1"/>
                         <swrl:argument2 rdf:resource="urn:swrl#o2"/>
                     </rdf:Description>
                 </rdf:first>
@@ -6151,9 +6173,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#o1"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#o2"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#transfer_of_a_chemical_group"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6161,10 +6183,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#o1"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -6172,9 +6193,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#transfer_of_a_chemical_group"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#o1"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -6183,9 +6205,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -6193,9 +6215,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#o2"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -6204,9 +6227,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#a"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -6304,9 +6327,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6325,9 +6348,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -6336,8 +6359,8 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -6399,9 +6422,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -6430,9 +6453,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -6478,7 +6501,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m"/>
                     </rdf:Description>
@@ -6534,7 +6557,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -6585,7 +6608,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                                 <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                                             </rdf:Description>
@@ -6626,7 +6649,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -6666,9 +6689,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -6676,9 +6700,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -6686,10 +6710,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                                 <rdf:first>
                                                                     <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6713,7 +6736,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002434"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#interacts_with"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -6730,7 +6753,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -6761,7 +6784,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                             </rdf:Description>
@@ -6849,9 +6872,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6859,10 +6883,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6878,7 +6901,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002434"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#interacts_with"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
                         <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
                     </rdf:Description>
@@ -6894,8 +6917,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                     </rdf:Description>
                 </rdf:first>
@@ -6904,9 +6928,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_addition_of_a_chemical_group"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -6914,10 +6938,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_addition_of_a_chemical_group"/>
                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -6926,7 +6949,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl#m"/>
                                             </rdf:Description>
@@ -7055,9 +7078,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -7077,9 +7100,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#p_out"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#pc_in"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7142,7 +7165,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                             </rdf:Description>
@@ -7163,7 +7186,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                             </rdf:Description>
@@ -7230,9 +7253,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#cp_out"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -7240,10 +7263,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_protein_complex_disassembly"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#cp_out"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -7251,9 +7273,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#spontaneous_protein_complex_disassembly"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#cp_in"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -7264,7 +7287,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl#cp_in"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -7273,9 +7296,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_molecular_part"/>
-                                                                                <swrl:argument1 rdf:resource="urn:swrl#cp_in"/>
-                                                                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -7284,7 +7307,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                                                         <swrl:argument2 rdf:resource="urn:swrl#cp_in"/>
                                                                                     </rdf:Description>
@@ -7353,9 +7376,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -7363,10 +7386,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m1"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -7374,9 +7396,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#m1"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7394,7 +7417,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002434"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#interacts_with"/>
                         <swrl:argument1 rdf:resource="urn:swrl#m1"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m2"/>
                     </rdf:Description>
@@ -7421,7 +7444,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                             </rdf:Description>
@@ -7431,9 +7454,10 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -7441,9 +7465,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#protein"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -7451,10 +7475,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#p_in"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7474,7 +7497,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002434"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#interacts_with"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p_in"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -7491,7 +7514,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -7533,7 +7556,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                                     </rdf:Description>
@@ -7572,7 +7595,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                         <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                     </rdf:Description>
@@ -7623,7 +7646,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                                                 <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                                             </rdf:Description>
@@ -7676,9 +7699,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7687,9 +7710,9 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -7742,7 +7765,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#m_in"/>
                             </rdf:Description>
@@ -7753,7 +7776,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                                         <swrl:argument1 rdf:resource="urn:swrl#p"/>
                                         <swrl:argument2 rdf:resource="urn:swrl#m_out"/>
                                     </rdf:Description>
@@ -7788,190 +7811,20 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#pag"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#p"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/GOREL_0001007"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#pag"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#P"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#P"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#mol"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#mol"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#pel"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#pel"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#mol"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pel"/>
                         <swrl:argument2 rdf:resource="urn:swrl#mol"/>
                     </rdf:Description>
                 </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#pel"/>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#pel"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#mol"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#ends_with"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#pel"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7985,7 +7838,7 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
                         <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
                         <swrl:argument2 rdf:resource="urn:swrl#mol"/>
                     </rdf:Description>
@@ -8032,6 +7885,176 @@ A series of biochemical reactions which occurs in a known sequence and can resul
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#contributes_to"/>
                         <swrl:argument1 rdf:resource="urn:swrl#subu"/>
                         <swrl:argument2 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_output"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#mol"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#P"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#P"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#mol"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#precedes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pel"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#mol"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#starts_with"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#pel"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_input"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#Pag"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#mol"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#has_subprocess"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#pag"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BiPOm#mediated_by"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pag"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#m"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
